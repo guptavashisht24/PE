@@ -20,10 +20,20 @@ a {
     display: flex;
     justify-content: space-between;
   }
+  .navBar ul li {
+    display: block;
+    padding : 20px;
+    margin : 10px;
+  }
   }
   @media screen and (min-width : 591px){
     .showButton{
       display: none;
+    }
+    .navBar ul li {
+      display: inline;
+      padding : 20px;
+      margin : 10px;
     }
     .container{
       margin-top: 10px;
@@ -51,11 +61,7 @@ body{
   list-style-type: none;
 }
 
-.navBar ul li {
-  display: inline;
-  padding : 20px;
-  margin : 10px;
-}
+
 
 
 body{

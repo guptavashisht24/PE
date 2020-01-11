@@ -8,6 +8,8 @@ const Header = () => {
   
   const toggleMenu = () => {
     console.log("Imma clicked")
+    var element = document.getElementById("lists");
+    element.classList.toggle("headerShow");
   }
 
   return (
@@ -16,7 +18,7 @@ const Header = () => {
         <div className = "logo">
           <img src = {logo} alt = "PANKAJ ELECTRICALS"></img>
         </div>
-        <div className = "navList headerShow"> 
+        <div className = "navList headerShow" id="lists"> 
           <ul>
             <li><Link to="/">Home</Link></li>
             <li><Link to="/about">About Us</Link></li>
