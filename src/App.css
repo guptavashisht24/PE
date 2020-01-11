@@ -1,6 +1,51 @@
 .App {
   text-align: center;
 }
+a {
+  color : black;
+  text-decoration: none; /* no underline */
+}
+
+.hamburger{
+  margin-top: 16px;
+  margin-right: 10px;
+}
+
+  @media screen and (max-width : 590px){
+   .headerShow{
+     display: none;
+   }
+   .container{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  }
+  @media screen and (min-width : 591px){
+    .showButton{
+      display: none;
+    }
+    .container{
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-around;
+    }
+   }
+
+.bar{
+  display: block;
+  background-color: #4c4c4c;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+.mt4{
+  margin-top: 6px;
+}
+
+body{
+  box-sizing: border-box;
+}
 
 .navBar ul{
   list-style-type: none;
@@ -8,12 +53,10 @@
 
 .navBar ul li {
   display: inline;
+  padding : 20px;
+  margin : 10px;
 }
 
-.container{
-  display: flex;
-  justify-content: space-around;
-}
 
 body{
   margin: 0;
