@@ -19,16 +19,16 @@ const Home = () => {
     <>
     <Slider {...settings} className="mb10">
           <div>
-            <img src={tnb}></img>
+            <img src={tnb} className={"images"}></img>
           </div>
           <div>
-          <img src={im4}></img>
+          <img src={im4} className={"images"}></img>
           </div>
           <div>
-          <img src={elm}></img>
+          <img src={elm} className={"images"}></img>
           </div>
           <div>
-          <img src={abb}></img>
+          <img src={abb} className={"images"}></img>
           </div>
     </Slider>
         </>
