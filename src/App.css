@@ -80,7 +80,7 @@ a {
 @media screen and (min-width: 591px) {
   .navbar {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       padding-bottom: 0;
       height: 70px;
       align-items: center;
