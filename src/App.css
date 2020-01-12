@@ -42,42 +42,15 @@ a {
 
 .navbar-toggle {
   position: absolute;
-  top: 25px;
+  top: 30px;
   right: 20px;
   cursor: pointer; 
   color: rgba(255,255,255,0.8);
   font-size: 24px;
 }
 
-@media screen and (min-width: 591px) {
-  .navbar {
-      display: flex;
-      justify-content: space-between;
-      padding-bottom: 0;
-      height: 70px;
-      align-items: center;
-  }
-  .main-nav {
-      display: flex;
-      margin-right: 30px;
-      flex-direction: row;
-      justify-content: flex-end;
-  }
-  .main-nav li {
-      margin: 0;
-  }
-  .nav-links {
-      margin-left: 40px;
-  }
-  .logo {
-      margin-top: 0;
-  }
- .navbar-toggle {
-     display: none;
-  }
-}
 
-@media screen and (min-width: 591px) {
+@media screen and (min-width: 767px) {
   .navbar {
       display: flex;
       justify-content: space-around;
@@ -94,6 +67,11 @@ a {
   .main-nav li {
       margin: 0;
   }
+  .navbar ul li {
+    display: block;
+    padding : 10px;
+    margin : 10px;
+  }
   .nav-links {
       margin-left: 40px;
   }
@@ -105,7 +83,7 @@ a {
   }
 }
 
-@media screen and (max-width : 590px){
+@media screen and (max-width : 768px){
   .active {
     display: block;
   }
