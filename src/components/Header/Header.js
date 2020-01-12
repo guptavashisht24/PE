@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import logo from './assets/logo.png';
 import {
   Link
 } from "react-router-dom";
 
 const Header = () => {
-
+  useEffect(()=>{
+    if(window.location.href.indexOf('/about')>-1){
+      document.getElementById('about').classList.add('showHighLight')
+    }else{
+      document.getElementById('home').classList.add('showHighLight')
+    }
+  },[])
   const toggleMenu = () => {
     let mainNav = document.getElementById('js-menu');
     mainNav.classList.toggle('active');
