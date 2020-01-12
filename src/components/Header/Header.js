@@ -5,13 +5,13 @@ import {
 } from "react-router-dom";
 
 const Header = () => {
-  useEffect(()=>{
-    if(window.location.href.indexOf('/about')>-1){
+  useEffect(() => {
+    if (window.location.href.indexOf('/about') > -1) {
       document.getElementById('about').classList.add('showHighLight')
-    }else{
+    } else {
       document.getElementById('home').classList.add('showHighLight')
     }
-  },[])
+  }, [])
   const toggleMenu = () => {
     let mainNav = document.getElementById('js-menu');
     mainNav.classList.toggle('active');
@@ -30,16 +30,28 @@ const Header = () => {
 
   return (
     <nav className="navbar">
-      <span className="navbar-toggle" id="js-navbar-toggle" onClick = {toggleMenu}>
+      <span className="navbar-toggle" id="js-navbar-toggle" onClick={toggleMenu}>
         <span className="bar"></span>
         <span className="bar mt4"></span>
         <span className="bar mt4"></span>
       </span>
-      <Link to="/"><img src = {logo} alt = "PANKAJ ELECTRICALS"></img></Link>
+      <Link to="/"><img src={logo} alt="PANKAJ ELECTRICALS"></img></Link>
       <ul className="main-nav" id="js-menu">
-        <li id="home"><Link to="/" onClick = {(id)=>{activeHandler("home")}}>Home</Link></li>
-        <li id="about"><Link to="/about" onClick = {(id)=>{activeHandler("about")}}>About Us</Link></li>
-        <li id="products"><Link to="/about" onClick = {(id)=>{activeHandler("products")}}>Products</Link></li>
+        <li id="home">
+          <Link to="/" onClick={(id) => { activeHandler("home") }}>
+            Home
+        </Link>
+        </li>
+        <li id="about">
+          <Link to="/about" onClick={(id) => { activeHandler("about") }}>
+            About Us
+        </Link>
+        </li>
+        <li id="products">
+          <div onClick={(id) => { activeHandler("products") }}>
+            Products
+        </div>
+        </li>
       </ul>
     </nav>
   )
