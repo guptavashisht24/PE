@@ -11,6 +11,17 @@ const Header = () => {
     mainNav.classList.toggle('active');
   }
 
+  const removeHovers = () => {
+    document.getElementById("home").classList.remove('showHighLight')
+    document.getElementById("about").classList.remove('showHighLight')
+    document.getElementById("products").classList.remove('showHighLight')
+  }
+
+  const activeHandler = (id) => {
+    removeHovers();
+    document.getElementById(id).classList.add('showHighLight')
+  }
+
   return (
     <nav className="navbar">
       <span className="navbar-toggle" id="js-navbar-toggle" onClick = {toggleMenu}>
@@ -18,11 +29,11 @@ const Header = () => {
         <span className="bar mt4"></span>
         <span className="bar mt4"></span>
       </span>
-      <a href="#" className="logo"><img src = {logo} alt = "PANKAJ ELECTRICALS"></img></a>
+      <Link to="/"><img src = {logo} alt = "PANKAJ ELECTRICALS"></img></Link>
       <ul className="main-nav" id="js-menu">
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About Us</Link></li>
-        <li><Link to="/about">Products</Link></li>
+        <li id="home"><Link to="/" onClick = {(id)=>{activeHandler("home")}}>Home</Link></li>
+        <li id="about"><Link to="/about" onClick = {(id)=>{activeHandler("about")}}>About Us</Link></li>
+        <li id="products"><Link to="/about" onClick = {(id)=>{activeHandler("products")}}>Products</Link></li>
       </ul>
     </nav>
   )

@@ -42,7 +42,7 @@ a {
 
 .navbar-toggle {
   position: absolute;
-  top: 30px;
+  top: 25px;
   right: 20px;
   cursor: pointer; 
   color: rgba(255,255,255,0.8);
@@ -83,6 +83,15 @@ a {
   }
 }
 
+.navbar ul li:hover{
+  border: 1px solid darkblue;
+  border-radius: 5px;
+}
+
+.showHighLight {
+  border: 1px solid darkblue;
+  border-radius: 5px;
+}
 @media screen and (max-width : 768px){
   .active {
     display: block;
