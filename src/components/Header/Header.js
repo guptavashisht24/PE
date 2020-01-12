@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import logo from './assets/logo.png';
+import logo from '../assets/logo.png';
 import {
   Link
 } from "react-router-dom";
@@ -38,19 +38,24 @@ const Header = () => {
       <Link to="/"><img src={logo} alt="PANKAJ ELECTRICALS"></img></Link>
       <ul className="main-nav" id="js-menu">
         <li id="home">
-          <Link to="/" onClick={(id) => { activeHandler("home") }}>
+          <Link to="/" onClick={() => { activeHandler("home") }}>
             Home
         </Link>
         </li>
         <li id="about">
-          <Link to="/about" onClick={(id) => { activeHandler("about") }}>
+          <Link to="/about" onClick={() => { activeHandler("about") }}>
             About Us
         </Link>
         </li>
         <li id="products">
-          <div onClick={(id) => { activeHandler("products") }}>
+          <div className = "dropdown" onClick={() => { activeHandler("products") }}>
             Products
-        </div>
+          </div>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+          </div>
         </li>
       </ul>
     </nav>
