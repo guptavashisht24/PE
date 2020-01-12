@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 import About from './pages/About'
 import Home from './pages/Home'
 import {
@@ -18,6 +19,7 @@ function App() {
         <Route exact path="/about" component = {About} />
         <Route exact path="/" component = {Home} />
       </Switch>
+      <Footer />
       </Router>
     </div>
   );

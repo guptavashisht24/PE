@@ -17,7 +17,7 @@ const Home = () => {
   }
   return (
     <>
-    <Slider {...settings}>
+    <Slider {...settings} className="mb10">
           <div>
             <img src={tnb}></img>
           </div>
@@ -30,7 +30,7 @@ const Home = () => {
           <div>
           <img src={abb}></img>
           </div>
-        </Slider>
+    </Slider>
         </>
   )
 }

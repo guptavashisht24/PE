@@ -118,8 +118,21 @@ body{
   list-style-type: none;
 }
 
+.footer{
+  background-color: #3b4248;
+  height: 70px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.mb10{
+  margin-bottom: 30px;
+}
 
-
+.alignData{
+  width: 100%;
+  text-align: center;
+}
 
 body{
   margin: 0;
