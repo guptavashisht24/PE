@@ -2,7 +2,6 @@ import React from 'react';
 
 const Intro = ({full = false}) => {
   const classNames = (full)? `sticky intro`:`intro`
-  console.log(full);
   return (
     <div className={classNames}>
       <h1><u>Welcome to Pankaj Electricals</u></h1>
