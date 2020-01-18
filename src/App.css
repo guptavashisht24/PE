@@ -185,3 +185,10 @@ body{
 .images{
   margin : 5px;
 }
+
+.intro{
+  margin: 20px;
+}
+h1{
+  text-align: center;
+}

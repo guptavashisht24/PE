@@ -7,6 +7,7 @@ import tnb from '../../components/assets/TNB-ABB.jpg';
 import im4 from '../../components/assets/image004.jpg';
 import elm from '../../components/assets/ELASTIMOLD.png';
 import abb from '../../components/assets/abb-banner.jpg';
+import Intro from '../../components/Intro';
 
 const Home = () => {
   const settings = {
@@ -33,6 +34,7 @@ const Home = () => {
           </div>
     </Slider>
     <BrandPartners />
+    <Intro />
         </>
   )
 }
