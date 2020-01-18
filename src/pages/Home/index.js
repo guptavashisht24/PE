@@ -3,10 +3,11 @@ import Slider from "react-slick";
 import BrandPartners from './BrandPartner';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import tnb from '../../components/assets/TNB-ABB.jpg';
-import im4 from '../../components/assets/image004.jpg';
-import elm from '../../components/assets/ELASTIMOLD.png';
-import abb from '../../components/assets/abb-banner.jpg';
+import first from '../../components/assets/1.jpg';
+import second from '../../components/assets/2.jpg';
+import third from '../../components/assets/3.jpg';
+import fourth from '../../components/assets/4.jpg';
+import fifth from '../../components/assets/5.jpg';
 import Intro from '../../components/Intro';
 
 const Home = () => {
@@ -15,22 +16,25 @@ const Home = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    cssEase: "linear"
   }
   return (
     <>
     <Slider {...settings} className="mb10">
           <div>
-            <img src={tnb} className="sliderImages"></img>
+          <img src={second} className="sliderImages"></img>
           </div>
           <div>
-          <img src={im4} className="sliderImages"></img>
+          <img src={third} className="sliderImages"></img>
           </div>
           <div>
-          <img src={elm} className="sliderImages"></img>
+          <img src={fourth} className="sliderImages"></img>
           </div>
           <div>
-          <img src={abb} className="sliderImages"></img>
+          <img src={fifth} className="sliderImages"></img>
           </div>
     </Slider>
     <BrandPartners />

@@ -51,10 +51,13 @@ const Header = () => {
           <div className = "dropdown" onClick={() => { activeHandler("products") }}>
             Products
           </div>
-            <div class="dropdown-content">
-              <div><a href="#">Link 1</a></div>
-              <div><a href="#">Link 2</a></div>
-              <div><a href="#">Link 3</a></div>
+            <div className="dropdown-content w100">
+              <div className="white"><a href="https://new.abb.com/low-voltage/products/switchgear">ABB SWITCHGEAR</a></div>
+              <div className="white"><a href="http://tnb.abb.com/pub/en/brands/tandb">THOMAS & BETTS	</a></div>
+              <div className="white"><a href="http://tnb.abb.com/pub/en/brands/elastimold">ELASTIMOLD</a></div>
+              <div className="white"><a href="https://new.abb.com/low-voltage/products/conduit-fittings/adaptaflex">ADAPTAFLEX CONDUIT</a></div>
+              <div className="white"><a href="https://new.abb.com/low-voltage/products/conduit-fittings/harnessflex">HARNESSFLEX</a></div>
+              <div className="white"><a href="http://tnb.abb.com/pub/en/brands/ty-rap">TY-RAP</a></div>
           </div>
         </li>
       </ul>
