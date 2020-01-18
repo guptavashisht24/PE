@@ -19,7 +19,7 @@ const BrandPartners = () => {
       </div>
       <div className = "partners">
         <div className = "images">
-         <img  src={first}></img>
+         <a href=""><img  src={first}></img></a>
         </div>
         <div className = "images">
         <img  src={second}></img>

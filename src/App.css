@@ -190,6 +190,9 @@ body{
 .images{
   margin : 5px;
 }
+.images:hover{
+  border: 2px solid #3A7FB8; 
+}
 
 .intro{
   background: #f5f5f5;
@@ -219,4 +222,7 @@ h1{
 }
 .white a{
   color: white;
+}
+.white a:hover{
+  color: gold;
 }
