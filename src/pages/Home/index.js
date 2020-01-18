@@ -1,5 +1,6 @@
 import React from 'react';
 import Slider from "react-slick";
+import BrandPartners from './BrandPartner';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import tnb from '../../components/assets/TNB-ABB.jpg';
@@ -19,18 +20,19 @@ const Home = () => {
     <>
     <Slider {...settings} className="mb10">
           <div>
-            <img src={tnb} className={"images"}></img>
+            <img src={tnb} className="sliderImages"></img>
           </div>
           <div>
-          <img src={im4} className={"images"}></img>
+          <img src={im4} className="sliderImages"></img>
           </div>
           <div>
-          <img src={elm} className={"images"}></img>
+          <img src={elm} className="sliderImages"></img>
           </div>
           <div>
-          <img src={abb} className={"images"}></img>
+          <img src={abb} className="sliderImages"></img>
           </div>
     </Slider>
+    <BrandPartners />
         </>
   )
 }
