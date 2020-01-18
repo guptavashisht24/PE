@@ -1,7 +1,9 @@
 import React from 'react';
+import Intro from '../../components/Intro';
+
 
 const About = () => (
-  <>About Us Page</>
+  <><Intro full/></>
 )
 
 export default About
