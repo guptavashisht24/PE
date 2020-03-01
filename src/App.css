@@ -218,11 +218,11 @@ h1{
   height: 95vh;
 }
 .white{
-  margin: 5px;
+  
 }
 .white a{
   color: white;
 }
-.white a:hover{
-  color: gold;
+.white:hover{
+  background-color: #333;;
 }

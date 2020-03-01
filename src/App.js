@@ -3,6 +3,9 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import About from './pages/About'
 import Home from './pages/Home'
+import Blog from './pages/Blog'
+import Contact from './pages/Contact'
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -17,6 +20,8 @@ function App() {
       <Header />
       <Switch>
         <Route exact path="/about" component = {About} />
+        <Route exact path="/blog" component = {Blog} />
+        <Route exact path="/contactus" component = {Contact} />
         <Route exact path="/" component = {Home} />
       </Switch>
       <Footer />

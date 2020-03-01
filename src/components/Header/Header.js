@@ -21,6 +21,8 @@ const Header = () => {
     document.getElementById("home").classList.remove('showHighLight')
     document.getElementById("about").classList.remove('showHighLight')
     document.getElementById("products").classList.remove('showHighLight')
+    document.getElementById("blog").classList.remove('showHighLight')
+    document.getElementById("contact").classList.remove('showHighLight')
   }
 
   const activeHandler = (id) => {
@@ -52,21 +54,21 @@ const Header = () => {
             Products
           </div>
             <div className="dropdown-content w100">
-              <div className="white"><a href="https://new.abb.com/low-voltage/products/switchgear">ABB SWITCHGEAR</a></div>
-              <div className="white"><a href="http://tnb.abb.com/pub/en/brands/tandb">THOMAS & BETTS	</a></div>
-              <div className="white"><a href="http://tnb.abb.com/pub/en/brands/elastimold">ELASTIMOLD</a></div>
-              <div className="white"><a href="https://new.abb.com/low-voltage/products/conduit-fittings/adaptaflex">ADAPTAFLEX CONDUIT</a></div>
-              <div className="white"><a href="https://new.abb.com/low-voltage/products/conduit-fittings/harnessflex">HARNESSFLEX</a></div>
-              <div className="white"><a href="http://tnb.abb.com/pub/en/brands/ty-rap">TY-RAP</a></div>
+              <div className="white"><div><a href="https://new.abb.com/low-voltage/products/switchgear">ABB SWITCHGEAR</a></div></div>
+              <div className="white"><div><a href="http://tnb.abb.com/pub/en/brands/tandb">THOMAS & BETTS	</a></div></div>
+              <div className="white"><div><a href="http://tnb.abb.com/pub/en/brands/elastimold">ELASTIMOLD</a></div></div>
+              <div className="white"><div><a href="https://new.abb.com/low-voltage/products/conduit-fittings/adaptaflex">ADAPTAFLEX CONDUIT</a></div></div>
+              <div className="white"><div><a href="https://new.abb.com/low-voltage/products/conduit-fittings/harnessflex">HARNESSFLEX</a></div></div>
+              <div className="white"><div><a href="http://tnb.abb.com/pub/en/brands/ty-rap">TY-RAP</a></div></div>
           </div>
         </li>
         <li id="blog">
-          <Link to="/about" onClick={() => { activeHandler("about") }}>
+          <Link to="/blog" onClick={() => { activeHandler("about") }}>
             Blog
         </Link>
         </li>
         <li id="contact">
-          <Link to="/about" onClick={() => { activeHandler("about") }}>
+          <Link to="/contactus" onClick={() => { activeHandler("about") }}>
             Contact Us
         </Link>
         </li>
