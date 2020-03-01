@@ -60,6 +60,16 @@ const Header = () => {
               <div className="white"><a href="http://tnb.abb.com/pub/en/brands/ty-rap">TY-RAP</a></div>
           </div>
         </li>
+        <li id="blog">
+          <Link to="/about" onClick={() => { activeHandler("about") }}>
+            Blog
+        </Link>
+        </li>
+        <li id="contact">
+          <Link to="/about" onClick={() => { activeHandler("about") }}>
+            Contact Us
+        </Link>
+        </li>
       </ul>
     </nav>
   )
