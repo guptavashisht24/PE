@@ -10,7 +10,7 @@ const Contact = () => {
   //   }
 
   useEffect(()=>{
-    initMap()
+    //initMap()
   },[])
  return(<div id="map"></div>)
   

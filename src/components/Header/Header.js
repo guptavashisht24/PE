@@ -8,7 +8,11 @@ const Header = () => {
   useEffect(() => {
     if (window.location.href.indexOf('/about') > -1) {
       document.getElementById('about').classList.add('showHighLight')
-    } else {
+    } else if(window.location.href.indexOf('/blog') > -1) {
+      document.getElementById('blog').classList.add('showHighLight')
+    } else if(window.location.href.indexOf('/contactus') > -1) {
+      document.getElementById('contact').classList.add('showHighLight')
+    } else{
       document.getElementById('home').classList.add('showHighLight')
     }
   }, [])
@@ -63,12 +67,12 @@ const Header = () => {
           </div>
         </li>
         <li id="blog">
-          <Link to="/blog" onClick={() => { activeHandler("about") }}>
+          <Link to="/blog" onClick={() => { activeHandler("blog") }}>
             Blog
         </Link>
         </li>
         <li id="contact">
-          <Link to="/contactus" onClick={() => { activeHandler("about") }}>
+          <Link to="/contactus" onClick={() => { activeHandler("contact") }}>
             Contact Us
         </Link>
         </li>
