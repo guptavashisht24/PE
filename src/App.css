@@ -226,3 +226,13 @@ h1{
 .white:hover{
   background-color: #333;;
 }
+
+.img{
+  max-width: 115px;
+  max-height: 90px;
+}
+
+#map {
+  height: 400px;  /* The height is 400 pixels */
+  width: 100%;  /* The width is the width of the web page */
+ }
