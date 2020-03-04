@@ -3,7 +3,6 @@ import Slider from "react-slick";
 import BrandPartners from './BrandPartner';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import first from '../../components/assets/1.jpg';
 import second from '../../components/assets/2.jpg';
 import third from '../../components/assets/3.jpg';
 import fourth from '../../components/assets/4.jpg';
