@@ -2,11 +2,6 @@ import React from 'react';
 import MapContainer from './Map';
 
 const Contact = () => {
-  const getIframe = () => {
-    return {
-      __html: '<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdfcKtXyjD0dvWi2JfP_VU-mbe9MfeMOGaYbDvfxi0gpLh37A/viewform?embedded=true" width="640" height="808" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>'
-    }
-  }
   return (
     <div className="flex">
       <div className="addressContainer w40">
