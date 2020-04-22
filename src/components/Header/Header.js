@@ -41,7 +41,7 @@ const Header = () => {
         <span className="bar mt4"></span>
         <span className="bar mt4"></span>
       </span>
-      <Link to="/" className = "hypl"><img src={logo} alt="PANKAJ ELECTRICALS"></img></Link>
+      <Link to="/" className = "hypl"><img src={logo} alt="PANKAJ ELECTRICALS" ></img></Link>
       <ul className="main-nav" id="js-menu">
         <li id="home">
           <Link to="/" onClick={() => { activeHandler("home") }}>
